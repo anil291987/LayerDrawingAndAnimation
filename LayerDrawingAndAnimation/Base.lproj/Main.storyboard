@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Plb-jV-x6T"/>
+                        <viewControllerLayoutGuide type="bottom" id="uTh-NE-III"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoF-iX-G56" userLabel="centerButton">
+                                <rect key="frame" x="180" y="307" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dz7-9a-sci"/>
+                                    <constraint firstAttribute="width" constant="30" id="kq3-aY-ZVY"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionForCenterButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0s9-AG-Qbk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gx-a2-Ca9" userLabel="magentoButton">
+                                <rect key="frame" x="20" y="342" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="1qT-Qu-jbu"/>
+                                    <constraint firstAttribute="height" constant="30" id="d5p-FY-Gdg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdZ-X8-h9T" userLabel="blueButton">
+                                <rect key="frame" x="252" y="165" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="3Wh-0j-yp7"/>
+                                    <constraint firstAttribute="width" constant="30" id="Qd8-ac-15x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwV-le-SmT" userLabel="orangeButton">
+                                <rect key="frame" x="94" y="124" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="4Jd-p1-ZCc"/>
+                                    <constraint firstAttribute="height" constant="30" id="73E-l6-pa2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kwV-le-SmT" firstAttribute="top" secondItem="Plb-jV-x6T" secondAttribute="bottom" constant="104" id="2IC-bg-0nP"/>
+                            <constraint firstItem="kwV-le-SmT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="94" id="6pL-iV-hpx"/>
+                            <constraint firstAttribute="centerX" secondItem="hoF-iX-G56" secondAttribute="centerX" constant="-35" id="BBM-iH-qbx"/>
+                            <constraint firstItem="8gx-a2-Ca9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="EEB-aO-PMS"/>
+                            <constraint firstAttribute="centerY" secondItem="hoF-iX-G56" secondAttribute="centerY" constant="-38" id="K9p-5T-0gC"/>
+                            <constraint firstItem="uTh-NE-III" firstAttribute="top" secondItem="8gx-a2-Ca9" secondAttribute="bottom" constant="196" id="TuV-bF-eAl"/>
+                            <constraint firstItem="bdZ-X8-h9T" firstAttribute="top" secondItem="Plb-jV-x6T" secondAttribute="bottom" constant="145" id="gtd-Po-DAB"/>
+                            <constraint firstAttribute="trailing" secondItem="bdZ-X8-h9T" secondAttribute="trailing" constant="38" id="rbL-HH-P40"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueButton" destination="bdZ-X8-h9T" id="ibq-9d-Wme"/>
+                        <outlet property="centerButton" destination="hoF-iX-G56" id="DJb-X7-yii"/>
+                        <outlet property="magentoButton" destination="8gx-a2-Ca9" id="nDn-wN-qOb"/>
+                        <outlet property="orangeButton" destination="kwV-le-SmT" id="YER-PO-Cid"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
